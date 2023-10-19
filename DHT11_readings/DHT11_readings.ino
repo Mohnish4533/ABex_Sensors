@@ -62,8 +62,6 @@ void read_dht11(uint8_t dht11_pin) {
         return;
       }
     }
-    Serial.print("DEBUG");
-    Serial.println(digitalRead(dht11_pin));
     
     while ( digitalRead(dht11_pin) == (i & 1) ? HIGH : LOW );
 
